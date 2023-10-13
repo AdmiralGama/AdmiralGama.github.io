@@ -16,7 +16,6 @@ h1 {
 
 h2 {
     font-size: 35px;
-    margin-top: 60px;
 }
 
 p {
@@ -56,6 +55,6 @@ ul {
     background-color: #111111;
   }
 
-  #home, #aboutme, #projects {
+  #home, #aboutme, #projects, #resume {
     scroll-margin-top: 70px;
   }
