@@ -3,7 +3,7 @@ body {
     color: white;
 }
 
-.centered-buttons {
+.centered {
     margin: auto;
     justify-content: center;
     display: flex;
