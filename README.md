@@ -1,22 +1,38 @@
 # Caden Oslund's Portfolio
 
+## Projects
+
+* Elite Dangerous Material Sorter
+
 ## Project Ideas
 
 ### Finished
 
-* Othello App (shows that I can program mobile apps using Kotlin, as well as complex logic)
+* Othello App (from 458. shows that I can program mobile apps using Kotlin, as well as complex logic)
 
-* Picture of the Day (shows that I can use APIs)
+* Picture of the Day (from 458. shows that I can use APIs)
 
-* Yelp App (from Database Class)
+* Yelp App (from 451)
+
+* Spreadsheet App (from 321)
+
+* News App (from 322)
+
+* Postscript Interpreter (from 355)
+
+* Water Quality Monitering (from 315)
 
 ### In Progress
+
+* Capstone Project (421/423)
 
 * Space Race (keep it simple, make it look nice)
 
 * GrappleGame (polish it a *ton*)
 
 * AndroidPlatformer
+
+* Discord Bot
 
 ### Not/Barely Started
 
