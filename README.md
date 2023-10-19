@@ -4,6 +4,10 @@
 
 * Elite Dangerous Material Sorter
 
+## Papers
+
+* Graph Theory (453) Final Paper (Hedetniemi's Conjecture)
+
 ## Project Ideas
 
 ### Finished
