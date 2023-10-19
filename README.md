@@ -11,3 +11,11 @@
 * Making an OS (from scratch, I'm pretty sure I have a guide bookmarked)
 
 * Mediaeval Game (mix of Elden Ring and Monster Hunter?)
+
+* GrappleCube (super simple controls and style, character is just a cube, only control is grappling (point and click/hold))
+
+* GrappleGame (polish it a *ton*)
+
+* AndroidPlatformer
+
+* FPSTest
