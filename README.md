@@ -14,25 +14,27 @@ Split projects into school projects and personal projects?
 
 ### Finished
 
-* Othello App (from 458. shows that I can program mobile apps using Kotlin, as well as complex logic)
-* Picture of the Day (from 458. shows that I can use APIs)
-* Yelp App (from 451)
-* Spreadsheet App (from 321)
-* News App (from 322)
-* Postscript Interpreter (from 355)
-* Water Quality Monitering (from 315)
+* [Othello App](https://github.com/AdmiralGama/OthelloMobileApp) (from 458. shows that I can program mobile apps using Kotlin, as well as complex logic)
+* [Picture of the Day](https://github.com/AdmiralGama/PictureOfTheDayMobileApp) (from 458. shows that I can use APIs)
+* [Yelp App](https://github.com/AdmiralGama/YelpDatabaseApp) (from 451)
+* [Spreadsheet App](https://github.com/AdmiralGama/SpreadsheetApp) (from 321)
+* [News App](https://github.com/AdmiralGama/NewsApp) (from 322)
+* [Postscript Interpreter](https://github.com/AdmiralGama/PostscriptInterpreter) (from 355)
+* [Water Quality Monitering](https://github.com/AdmiralGama/WaterQualityMonitoringModel) (from 315)
 
 ### In Progress
 
 * Capstone Project (421/423)
-* Space Race (keep it simple, make it look nice) (maybe like 360 Bullet Hell + Wii Tanks?)
-* GrappleGame (polish it a *ton*)
-* AndroidPlatformer
-* Discord Bot
+* [Space Race](https://github.com/AdmiralGama/SpaceRace)
+* [GrappleGame](https://github.com/AdmiralGama/GrappleGame)
+* [AndroidPlatformer](https://github.com/AdmiralGama/AndroidPlatformer)
+* [DodoBot](https://github.com/AdmiralGama/DodoBot) (Discord Bot)
+* [FrogBot](https://github.com/AdmiralGama/FrogBot) (Discord Bot)
+* GamaMod (Minecraft Mod)
 
 ### Not/Barely Started
 
 * Making an OS (from scratch, I'm pretty sure I have a guide bookmarked)
-* Mediaeval Game (mix of Elden Ring and Monster Hunter?)
-* GrappleCube
-* FPSTest
+* [Mediaeval Game](https://dev.azure.com/AdmiralGama/Mediaeval%20Game) (mix of Elden Ring and Monster Hunter?)
+* [GrappleCube](https://github.com/AdmiralGama/GrappleCube)
+* [FPSTest](https://github.com/AdmiralGama/FPSTest)
