@@ -26,15 +26,16 @@ Split projects into school projects and personal projects?
 
 * Capstone Project (421/423)
 * [Space Race](https://github.com/AdmiralGama/SpaceRace)
+* [GrappleCube](https://github.com/AdmiralGama/GrappleCube)
 * [GrappleGame](https://github.com/AdmiralGama/GrappleGame)
 * [AndroidPlatformer](https://github.com/AdmiralGama/AndroidPlatformer)
-* [DodoBot](https://github.com/AdmiralGama/DodoBot) (Discord Bot)
-* [FrogBot](https://github.com/AdmiralGama/FrogBot) (Discord Bot)
-* GamaMod (Minecraft Mod)
+* [DodoBot](https://github.com/AdmiralGama/DodoBot)
+* [FrogBot](https://github.com/AdmiralGama/FrogBot)
+* [GamaModMinecraft](https://github.com/AdmiralGama/GamaModMinecraft)
 
 ### Not/Barely Started
 
 * Making an OS (from scratch, I'm pretty sure I have a guide bookmarked)
 * [Mediaeval Game](https://dev.azure.com/AdmiralGama/Mediaeval%20Game) (mix of Elden Ring and Monster Hunter?)
-* [GrappleCube](https://github.com/AdmiralGama/GrappleCube)
 * [FPSTest](https://github.com/AdmiralGama/FPSTest)
+* [GamaModTerraria](https://github.com/AdmiralGama/GamaModTerraria)
