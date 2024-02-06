@@ -40,6 +40,12 @@ button {
     font-size: 20px;
 }
 
+.repo-button {
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
