@@ -6,5 +6,66 @@
     </head>
     <body>
         <h1 style="margin-top: 60px;">Comics</h1>
+
+        <div class="centered">
+            <label for="comic">Comic: </label>
+            <select id="comic" onchange="comicSelected(this.value)">
+                <option value="comic1">Comic 1</option>
+                <option value="comic2">Comic 2</option>
+            </select>
+        </div>
+
+        <div class="centered">
+            <label for="page">Page: </label>
+            <select id="page" onchange="pageSelected(this.value)"></select>
+        </div>
+
+        <div class="centered">
+            <img id="display"/>
+        </div>
+
+        <script>
+            var pages = {
+                comic1: [["1", "comic1-1.png"], ["2", "comic1-2.png"], ["3", "comic1-3.png"]],
+                comic2: [["1", "comic2-1.png"], ["2", "comic2-2.png"]]
+            }
+
+            function comicSelected(value) {
+                pageList = pages[value];
+                
+                pageSelect = document.getElementById("page");
+
+                for (var i = pageSelect.options.length - 1; i >= 0; i--) {
+                    pageSelect.remove(i);
+                }
+
+                pageList.forEach(element => {
+                    var option = document.createElement("option");
+                    option.text = element[0];
+                    pageSelect.add(option);
+                });
+
+                pageSelected(document.getElementById("page").options[0].value);
+            }
+
+            function searchPage(comic, page) {
+                var pageList = pages[comic];
+                
+                for (var i = 0; i < pageList.length; i++) {
+                    if (pageList[i][0] == page) {
+                        return pageList[i][1];
+                    }
+                }
+            }
+
+            function pageSelected(value) {
+                var comic = document.getElementById("comic").value;
+
+                var page = "comics/" + searchPage(comic, value)
+                document.getElementById("display").src = page;
+            }
+
+            comicSelected(document.getElementById("comic").options[0].value);
+        </script>
     </body>
 </html>
