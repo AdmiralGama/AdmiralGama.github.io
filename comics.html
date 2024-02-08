@@ -21,7 +21,7 @@
         </div>
 
         <div class="centered">
-            <img id="display"/>
+            <img id="display" onclick="nextPage()"/>
         </div>
 
         <script>
@@ -63,6 +63,27 @@
 
                 var page = "comics/" + searchPage(comic, value)
                 document.getElementById("display").src = page;
+            }
+
+            function nextPage() {
+                var pageSelect = document.getElementById("page");
+                var pages = [];
+
+                for (var i = 0; i < pageSelect.options.length; i++) {
+                    pages.push(pageSelect.options[i].value);
+                }
+
+                var curr = pageSelect.value;
+                var currIndex = pages.findIndex((element) => element == curr);
+
+                if (currIndex < pages.length - 1) {
+                    var nextIndex = currIndex + 1;
+                    var next = pages[nextIndex];
+
+                    pageSelect.value = next;
+
+                    pageSelected(document.getElementById("page").value);
+                }
             }
 
             comicSelected(document.getElementById("comic").options[0].value);
