@@ -19,21 +19,22 @@
     <body>
         <h1 style="margin-top: 60px;">Art Portfolio</h1>
 
-        <div class="row">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-            <img src="images/OthelloGamePlay.png">
-          </div>
+        <div id="display" class="row"></div>
+
+        <script>
+            var images = ["OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png"];
+            
+            function setup() {
+                var display = document.getElementById("display");
+
+                images.forEach(element => {
+                    var image = document.createElement("img");
+                    image.src = "images/" + element;
+                    display.appendChild(image);
+                });
+            }
+
+            setup();
+        </script>
     </body>
 </html>
