@@ -3,12 +3,24 @@
     <head>
         <title>Comics</title>
         <link rel="stylesheet" href="css/main.css">
+        <style>
+            button {
+                padding: 2px;
+                margin: 4px;
+                font-size: 16px;
+            }
+
+            label {
+                align-self: center;
+                margin-right: 4px;
+            }
+        </style>
     </head>
     <body>
         <h1 style="margin-top: 60px;">Comics</h1>
 
         <div class="centered">
-            <label for="comic">Comic: </label>
+            <label for="comic">Comic:</label>
             <select id="comic" onchange="comicSelected(this.value)">
                 <option value="comic1">Comic 1</option>
                 <option value="comic2">Comic 2</option>
@@ -16,8 +28,12 @@
         </div>
 
         <div class="centered">
-            <label for="page">Page: </label>
+            <button onclick="first()">First</button>
+            <button onclick="prev()">Prev</button>
+            <label for="page">Page:</label>
             <select id="page" onchange="pageSelected(this.value)"></select>
+            <button onclick="next()">Next</button>
+            <button onclick="last()">Last</button>
         </div>
 
         <div class="centered">
@@ -84,6 +100,59 @@
 
                     pageSelected(document.getElementById("page").value);
                 }
+            }
+
+            function first() {
+                var pageSelect = document.getElementById("page");
+
+                pageSelect.value = pageSelect.options[0].value;
+                pageSelected(pageSelect.options[0].value);
+            }
+
+            function prev() {
+                var pageSelect = document.getElementById("page");
+
+                var pages = [];
+
+                for (var i = 0; i < pageSelect.options.length; i++) {
+                    pages.push(pageSelect.options[i].value);
+                }
+
+                var currIndex = pages.findIndex((element) => element == pageSelect.value);
+
+                if (currIndex > 0) {
+                    var index = currIndex - 1;
+                
+                    pageSelect.value = pageSelect.options[index].value;
+                    pageSelected(pageSelect.options[index].value);
+                }
+            }
+
+            function next() {
+                var pageSelect = document.getElementById("page");
+
+                var pages = [];
+
+                for (var i = 0; i < pageSelect.options.length; i++) {
+                    pages.push(pageSelect.options[i].value);
+                }
+
+                var currIndex = pages.findIndex((element) => element == pageSelect.value);
+
+                if (currIndex < pageSelect.length - 1) {
+                    var index = currIndex + 1;
+                
+                    pageSelect.value = pageSelect.options[index].value;
+                    pageSelected(pageSelect.options[index].value);
+                }
+            }
+
+            function last() {
+                var pageSelect = document.getElementById("page");
+                var index = pageSelect.options.length - 1;
+                
+                pageSelect.value = pageSelect.options[index].value;
+                pageSelected(pageSelect.options[index].value);
             }
 
             comicSelected(document.getElementById("comic").options[0].value);
