@@ -21,17 +21,16 @@
 
         <div class="centered">
             <label for="comic">Comic:</label>
-            <select id="comic" onchange="comicSelected(this.value)">
-                <option value="comic1">Comic 1</option>
-                <option value="comic2">Comic 2</option>
-            </select>
+            <select id="comic" onchange="comicSelected(this.value)"></select>
         </div>
 
         <div class="centered">
             <button onclick="first()">First</button>
             <button onclick="prev()">Prev</button>
+
             <label for="page">Page:</label>
             <select id="page" onchange="pageSelected(this.value)"></select>
+
             <button onclick="next()">Next</button>
             <button onclick="last()">Last</button>
         </div>
@@ -41,9 +40,24 @@
         </div>
 
         <script>
+            var comics = [["Comic 1", "comic1"], ["Comic 2", "comic2"]]
+            
             var pages = {
                 comic1: [["1", "comic1-1.png"], ["2", "comic1-2.png"], ["3", "comic1-3.png"]],
                 comic2: [["1", "comic2-1.png"], ["2", "comic2-2.png"]]
+            }
+
+            function setup() {
+                var comicSelect = document.getElementById("comic");
+                
+                comics.forEach(element => {
+                    var option = document.createElement("option");
+                    option.text = element[0];
+                    option.value = element[1];
+                    comicSelect.add(option);
+                });
+
+                comicSelected(document.getElementById("comic").options[0].value);
             }
 
             function comicSelected(value) {
@@ -58,26 +72,17 @@
                 pageList.forEach(element => {
                     var option = document.createElement("option");
                     option.text = element[0];
+                    option.value = element[1];
                     pageSelect.add(option);
                 });
 
                 pageSelected(document.getElementById("page").options[0].value);
             }
-
-            function searchPage(comic, page) {
-                var pageList = pages[comic];
-                
-                for (var i = 0; i < pageList.length; i++) {
-                    if (pageList[i][0] == page) {
-                        return pageList[i][1];
-                    }
-                }
-            }
-
+            
             function pageSelected(value) {
                 var comic = document.getElementById("comic").value;
 
-                var page = "comics/" + searchPage(comic, value)
+                var page = "comics/" + value;
                 document.getElementById("display").src = page;
             }
 
@@ -155,7 +160,7 @@
                 pageSelected(pageSelect.options[index].value);
             }
 
-            comicSelected(document.getElementById("comic").options[0].value);
+            setup();
         </script>
     </body>
 </html>
