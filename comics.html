@@ -58,6 +58,30 @@
                 });
 
                 comicSelected(document.getElementById("comic").options[0].value);
+
+                // Check if there are input parameters
+                var queryString = window.location.search;
+
+                if (queryString != "") {
+                    query = queryString.substring(1).split('/');
+                    comic = query[0];
+                    page = query[1];
+
+                    comicSelect.value = comic;
+                    comicSelected(comic);
+
+                    var pageSelect = document.getElementById("page");
+                    pageSelect.value = valueFromPage(comic, page);
+                    pageSelected(valueFromPage(comic, page));
+                }
+            }
+
+            function valueFromPage(comic, page) {
+                for (var i = 0; i < pages[comic].length; i++) {
+                    if (pages[comic][i][0] == page) {
+                        return pages[comic][i][1];
+                    }
+                }
             }
 
             function comicSelected(value) {
