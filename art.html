@@ -54,8 +54,9 @@
 
                 images.forEach(element => {
                     var image = document.createElement("img");
-                    image.src = "images/" + element;
-                    image.onclick = function() {select(image.src);};
+                    var src = "images/" + element;
+                    image.src = src;
+                    image.onclick = function() {select(src);};
                     display.appendChild(image);
                 });
 
