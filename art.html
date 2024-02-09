@@ -14,12 +14,31 @@
                 margin: 2%;
                 width: 20%;
             }
+
+            .single-display {
+                position: fixed;
+                display: none;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+            }
+
+            .single-image {
+                display: block;
+                margin: auto;
+                height: 80%;
+                width: auto;
+            }
         </style>
     </head>
     <body>
+        <div id="single-display" class="single-display" onclick="this.style.display = 'none';">
+            <img id="single-image" src="images/OthelloGamePlay.png" class="single-image"/>
+        </div>
+        
         <h1 style="margin-top: 60px;">Art Portfolio</h1>
 
-        <div id="display" class="row"></div>
+        <div id="main-display" class="row"></div>
 
         <script>
             var images = ["OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png",
@@ -27,13 +46,22 @@
             "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png"];
             
             function setup() {
-                var display = document.getElementById("display");
+                var display = document.getElementById("main-display");
 
                 images.forEach(element => {
                     var image = document.createElement("img");
                     image.src = "images/" + element;
+                    image.onclick = function() {select(image.src);};
                     display.appendChild(image);
                 });
+            }
+
+            function select(value) {
+                var display = document.getElementById("single-display");
+                var image = document.getElementById("single-image");
+
+                image.src = value;
+                display.style.display = "block";
             }
 
             setup();
