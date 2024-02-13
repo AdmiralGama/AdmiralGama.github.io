@@ -1,0 +1,26 @@
+.description p {
+    width: 100%;
+    text-align: left;
+}
+
+.terms div p {
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+}
+
+.terms div img {
+    height: 30px;
+}
+
+div {
+    padding: 2%;
+}
+
+a {
+    font-size: 18px;
+}
+
+.icon {
+    height: 30px;
+}
