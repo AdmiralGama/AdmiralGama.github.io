@@ -1,6 +1,6 @@
-var images = ["OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png",
-            "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png",
-            "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png", "OthelloGamePlay.png"];
+var images = ["placeholder.png", "placeholder.png", "placeholder.png", "placeholder.png",
+            "placeholder.png", "placeholder.png", "placeholder.png", "placeholder.png",
+            "placeholder.png", "placeholder.png", "placeholder.png", "placeholder.png"];
             
 function setup() {
     var display = document.getElementById("main-display");

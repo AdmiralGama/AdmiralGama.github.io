@@ -9,6 +9,12 @@
     font-size: 22px;
 }
 
+.frag div p {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+}
+
 .terms div img {
     height: 30px;
 }
