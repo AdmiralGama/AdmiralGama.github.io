@@ -11,6 +11,10 @@ body {
     margin-bottom: 10px;
 }
 
+.centered * {
+  display: inline-block;
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
