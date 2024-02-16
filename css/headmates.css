@@ -1,3 +1,7 @@
+.description {
+    min-width: 50%;
+}
+
 .description p {
     width: 100%;
     text-align: left;
@@ -17,6 +21,14 @@
 
 .terms div img {
     height: 30px;
+}
+
+.links {
+    width: max-content;
+}
+
+.links div {
+    width: max-content;
 }
 
 div {
