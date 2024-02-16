@@ -4,7 +4,7 @@
 
 .description p {
     width: 100%;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .terms div p {
