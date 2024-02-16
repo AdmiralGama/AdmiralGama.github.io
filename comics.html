@@ -1,44 +1,37 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width">
+        
         <title>Comics</title>
         <link rel="stylesheet" href="css/main.css">
-        <style>
-            button {
-                padding: 2px;
-                margin: 4px;
-                font-size: 16px;
-            }
-
-            label {
-                align-self: center;
-                margin-right: 4px;
-            }
-        </style>
+        <link rel="stylesheet" href="css/comics.css">
     </head>
     <body>
-        <h1 style="margin-top: 60px;">Comics</h1>
+        <div class="container">
+            <h1 style="margin-top: 60px;">Comics</h1>
 
-        <div class="centered">
-            <label for="comic">Comic:</label>
-            <select id="comic" onchange="comicSelected(this.value)"></select>
+            <div class="centered">
+                <label for="comic">Comic:</label>
+                <select id="comic" onchange="comicSelected(this.value)"></select>
+            </div>
+
+            <div class="centered">
+                <button onclick="first()">First</button>
+                <button onclick="prev()">Prev</button>
+
+                <label for="page">Page:</label>
+                <select id="page" onchange="pageSelected(this.value)"></select>
+
+                <button onclick="next()">Next</button>
+                <button onclick="last()">Last</button>
+            </div>
+
+            <div class="centered">
+                <img id="display" onclick="nextPage()"/>
+            </div>
+
+            <script src="js/comics.js"></script>
         </div>
-
-        <div class="centered">
-            <button onclick="first()">First</button>
-            <button onclick="prev()">Prev</button>
-
-            <label for="page">Page:</label>
-            <select id="page" onchange="pageSelected(this.value)"></select>
-
-            <button onclick="next()">Next</button>
-            <button onclick="last()">Last</button>
-        </div>
-
-        <div class="centered">
-            <img id="display" onclick="nextPage()"/>
-        </div>
-
-        <script src="js/comics.js"></script>
     </body>
 </html>

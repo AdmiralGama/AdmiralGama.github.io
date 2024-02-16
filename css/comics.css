@@ -1,0 +1,10 @@
+button {
+    padding: 2px;
+    margin: 4px;
+    font-size: 16px;
+}
+
+label {
+    align-self: center;
+    margin-right: 4px;
+}

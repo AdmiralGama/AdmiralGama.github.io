@@ -1,0 +1,14 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.display div {
+    margin: 2%;
+    width: 20%;
+}
+
+img {
+    width: 100%;
+}

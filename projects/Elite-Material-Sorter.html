@@ -1,32 +1,36 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width">
+
         <title>Elite Material Sorter</title>
         <link rel="stylesheet" href="../css/main.css">
     </head>
     <body>
-        <h1>Elite Material Sorter</h1>
+        <div class="container">
+            <h1>Elite Material Sorter</h1>
 
-        <div class="centered">
-            <label for="input">Input from Coriolis:</label>
+            <div class="centered">
+                <label for="input">Input from Coriolis:</label>
+            </div>
+
+            <div class="centered">
+                <textarea id="input" rows="15" cols="50" placeholder="Enter text here..."></textarea>
+            </div>
+
+            <div class="centered">
+                <button onclick="convert()">Convert</button>
+            </div>
+
+            <div class="centered">
+                <label for="output">Output:</label>
+            </div>
+
+            <div class="centered">
+                <textarea id="output" rows="17" cols="50" readonly></textarea>
+            </div>
+
+            <script type="text/javascript" src="../js/sorter.js"></script>
         </div>
-
-        <div class="centered">
-            <textarea id="input" rows="15" cols="50" placeholder="Enter text here..."></textarea>
-        </div>
-
-        <div class="centered">
-            <button onclick="convert()">Convert</button>
-        </div>
-
-        <div class="centered">
-            <label for="output">Output:</label>
-        </div>
-
-        <div class="centered">
-            <textarea id="output" rows="17" cols="50" readonly></textarea>
-        </div>
-
-        <script type="text/javascript" src="../js/sorter.js"></script>
     </body>
 </html>
