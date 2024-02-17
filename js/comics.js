@@ -64,7 +64,7 @@ function comicSelected(value) {
 function pageSelected(value) {
     var comic = document.getElementById("comic").value;
 
-    var page = "comics/" + value;
+    var page = "images/" + value;
     document.getElementById("display").src = page;
 }
 
