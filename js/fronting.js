@@ -28,7 +28,16 @@ async function load(id) {
     var memberObj = await response.json();
 
     var image = document.getElementById("image");
-    image.src = memberObj['avatar_url'];
+
+    if (memberObj['avatar_url'] == null) {
+        image.src = "../images/placeholder.png";
+    }
+    else {
+        image.src = memberObj['avatar_url'];
+    }
+    
+    console.log(memberObj['avatar_url']);
+
     image.style.borderColor = "#" + memberObj['color'];
 
     document.getElementById("name").innerText = memberObj['name'];
