@@ -26,7 +26,6 @@ function loading() {
 async function load(id) {
     var response = await fetch("https://api.pluralkit.me/v2/members/" + id);
     var memberObj = await response.json();
-    console.log(memberObj);
 
     var image = document.getElementById("image");
     image.src = memberObj['avatar_url'];
