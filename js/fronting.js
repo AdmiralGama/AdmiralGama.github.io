@@ -35,8 +35,6 @@ async function load(id) {
     else {
         image.src = memberObj['avatar_url'];
     }
-    
-    console.log(memberObj['avatar_url']);
 
     image.style.borderColor = "#" + memberObj['color'];
 
